@@ -1,0 +1,39 @@
+<nav class="uk-navbar-container" uk-navbar>
+
+  <div class="uk-navbar-right">
+
+      <ul class="uk-navbar-nav">
+          <li class="uk-active"><a routerLink="/">معرض الحرف</a></li>
+          <li><a routerLink="/register">التسجيل</a></li>
+          <li><a routerLink="/login">الدخول</a></li>
+
+          <li>
+              <a routerLink="#">المهارات</a>
+              <div class="uk-navbar-dropdown">
+                  <ul class="uk-nav uk-navbar-dropdown-nav">
+                      <li><a routerLink="/skilltype">أنواع المهارات</a></li>
+                      <li><a routerLink="/myskill">مهارتي الشخصية</a></li>
+                  </ul>
+              </div>
+          </li>
+          <li><a routerLink="/about">من نحن</a></li>
+          <li><a routerLink="/contact">إتصل بنا</a></li>
+      </ul>
+
+  </div>
+
+  <div class="uk-navbar-left">
+    <ul class="uk-navbar-nav">
+      <li>
+        <a href="#">حسابك الشخصي</a>
+        <div class="uk-navbar-dropdown">
+            <ul class="uk-nav uk-navbar-dropdown-nav">
+                <li><a routerLink="/addskill">أضف مهارة</a></li>
+                <li><a routerLink="/logout">تسجيل خروج</a></li>
+            </ul>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+</nav>
