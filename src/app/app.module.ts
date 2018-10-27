@@ -12,6 +12,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { AboutComponent } from './about/about.component';
+import { MyskillComponent } from './myskill/myskill.component';
+import { SkillComponent } from './skill/skill.component';
 
 const routes:Routes = [
   {path: '', redirectTo: 'home', pathMatch: 'full'},
@@ -20,6 +22,8 @@ const routes:Routes = [
   {path: 'login', component: LoginComponent},
   {path: 'register', component: RegisterComponent},
   {path: 'about', component: AboutComponent},
+  {path: 'myskill', component: MyskillComponent},
+  {path: 'allskill', component: SkillComponent},
 ]
 
 @NgModule({
@@ -30,7 +34,9 @@ const routes:Routes = [
     AddskillComponent,
     LoginComponent,
     RegisterComponent,
-    AboutComponent
+    AboutComponent,
+    MyskillComponent,
+    SkillComponent
   ],
   imports: [
     BrowserModule,
