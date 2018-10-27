@@ -19,3 +19,28 @@
         </div>
     </div>
 </div>
+<hr>
+<div class=" uk-padding">
+        <h1 class="h1-head">JSON API URL DATA</h1>
+    <table class="uk-table uk-table-justify uk-table-hover uk-table-divider" dir="ltr">
+        <thead>
+            <tr>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody *ngFor = "let data of records">
+            <tr>
+                <td>{{data.id}}</td>
+                <td>{{data.name}}</td>
+                <td>{{data.username}}</td>
+                <td>{{data.email}}</td>
+                <td>{{data.website}}</td>
+            </tr>
+            
+        </tbody>
+    </table>
+</div>

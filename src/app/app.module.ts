@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { FormsModule } from "@angular/forms";
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -16,6 +17,7 @@ import { MyskillComponent } from './myskill/myskill.component';
 import { SkillComponent } from './skill/skill.component';
 
 import { SqrtPipe } from './app.sqrt';
+import { MyserviceService } from './myservice.service';
 
 const routes:Routes = [
   {path: '', redirectTo: 'home', pathMatch: 'full'},
@@ -45,9 +47,10 @@ const routes:Routes = [
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot(routes),
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [MyserviceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
