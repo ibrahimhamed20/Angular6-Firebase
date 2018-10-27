@@ -15,6 +15,8 @@ import { AboutComponent } from './about/about.component';
 import { MyskillComponent } from './myskill/myskill.component';
 import { SkillComponent } from './skill/skill.component';
 
+import { SqrtPipe } from './app.sqrt';
+
 const routes:Routes = [
   {path: '', redirectTo: 'home', pathMatch: 'full'},
   {path: 'home', component: HomeComponent},
@@ -28,6 +30,7 @@ const routes:Routes = [
 
 @NgModule({
   declarations: [
+    SqrtPipe,
     AppComponent,
     NavbarComponent,
     HomeComponent,

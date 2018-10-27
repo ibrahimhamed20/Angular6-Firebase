@@ -13,7 +13,16 @@
             </div>
 
             <div class="uk-margin">
-                <button class="uk-button uk-button-primary">تسجيل جديد</button>
+                <select class="uk-select" (change)="changemonths($event)">
+                    <option *ngFor="let i of types">{{i}}</option>
+                </select>
+            </div>
+            <p *ngIf="isAvailable; then condition1 else condition2">هذا القسم متاح لدينا</p>
+            <ng-template #condition1>الاختيار صحيح</ng-template>
+            <ng-template #condition2>الاختيار خاطئ</ng-template>
+
+            <div class="uk-margin">
+                <button (click)="myClickFunction($event)" class="uk-button uk-button-primary">تسجيل جديد</button>
             </div>
 
         </fieldset>

@@ -7,22 +7,27 @@
             <div class="uk-margin">
                 <input class="uk-input" type="text" placeholder="أكتب إسمك هنا" name="name" [(ngModel)]="data.name">
             </div>
+            <p> إسمك: {{data.name}}</p>
 
             <div class="uk-margin">
                 <input class="uk-input" type="text" placeholder="أكتب رقم الهاتف هنا" name="phone" [(ngModel)]="data.phone">
             </div>
+            <p> رقم هاتفك: {{data.phone}}</p>
 
             <div class="uk-margin">
                 <input class="uk-input" type="text" placeholder="أكتب المهارة هنا" name="skill" [(ngModel)]="data.skill">
             </div>
+            <p> مهارتك: {{data.skill}}</p>
 
             <div class="uk-margin">
                 <input class="uk-input" type="text" placeholder="أكتب المحافظة هنا" name="province" [(ngModel)]="data.province">
             </div>
+            <p> محافظتك: {{data.province}}</p>
 
             <div class="uk-margin">
                 <input class="uk-input" type="text" placeholder="أكتب السعر هنا" name="price" [(ngModel)]="data.price">
             </div>
+            <p> سعر الخدمة: {{data.price}}</p>
 
             <div class="uk-margin">
                 <textarea class="uk-textarea" rows="5" placeholder="أكتب ملاحظاتك هنا" name="comments" [(ngModel)]="data.comments"></textarea>
